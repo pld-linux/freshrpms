@@ -4,7 +4,7 @@ Summary(pl):	¦ci±ga pakiety nowe pakiet RPM z serwerów FTP
 Name:		freshrpms
 Version:	0.7.4
 Release:	6
-License:	Distributable
+License:	distributable
 Group:		Applications/System
 Group(de):	Applikationen/System
 Group(pl):	Aplikacje/System
