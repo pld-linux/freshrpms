@@ -6,8 +6,6 @@ Version:	0.7.4
 Release:	6
 License:	distributable
 Group:		Applications/System
-Group(de):	Applikationen/System
-Group(pl):	Aplikacje/System
 Source0:	ftp://ftp.cs.tu-berlin.de/pub/local/flp/lutzeb/software/freshrpms/%{name}.tar.gz
 Requires:	perl-libnet
 Requires:	perl >= 5.004
