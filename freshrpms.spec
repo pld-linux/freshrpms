@@ -3,7 +3,7 @@ Summary:	Fetch RPM packages from FTP servers which are newer than the ones insta
 Summary(pl):	¦ci±ga pakiety nowe pakiet RPM z serwerów FTP
 Name:		freshrpms
 Version:	0.7.4
-Release:	5
+Release:	6
 License:	Distributable
 Group:		Applications/System
 Group(de):	Applikationen/System
