@@ -27,9 +27,9 @@ are older than the currenly installed ones.
 freshrpms jest skryptem w jêzyku Perl, ¶ci±gaj±cym z serwerów FTP
 pakiety RPM, których numery wersji s± wy¿sze ni¿ tych zainstalowanych
 w Twoim systemie. freshrpms nie instaluje samodzielnie ¿adnych
-pakietów, ale tylko wykorzystuje mened¿era pakietów, aby sprawdziæ
+pakietów, ale tylko wykorzystuje zarz±dcê pakietów, aby sprawdziæ
 jakie pakiety masz zainstalowane. freshrpms do wykonania swojego
-zadzania u¿ywa pliku konfiguracyjnego, który definiuje u¿ywane serwery
+zadania u¿ywa pliku konfiguracyjnego, który definiuje u¿ywane serwery
 FTP, ¶cie¿ki poszukiwañ, lokalne katalogi na nowe pakiety oraz
 archiwum. Mo¿e tak¿e przenosiæ stare pakiety do archiwum.
 
@@ -47,14 +47,12 @@ install freshrpms.conf $RPM_BUILD_ROOT%{_sysconfdir}/freshrpms.conf
 
 install freshrpms.1 $RPM_BUILD_ROOT%{_mandir}/man1/
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %config %{_sysconfdir}/freshrpms.conf
 %attr(755,root,root) %{_bindir}/freshrpms
 %{_mandir}/man1/freshrpms.1*
