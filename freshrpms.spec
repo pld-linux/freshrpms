@@ -3,13 +3,11 @@ Summary:	Fetch RPM packages from FTP servers which are newer than the ones insta
 Summary(pl):	¦ci±ga nowe pakiety RPM z serwerów FTP
 Name:		freshrpms
 Version:	0.7.4
-Release:	6
+Release:	7
 License:	distributable
 Group:		Applications/System
 Source0:	ftp://ftp.cs.tu-berlin.de/pub/local/flp/lutzeb/software/freshrpms/%{name}.tar.gz
 # Source0-md5:	afce815b87a5e0b758932d94f634525f
-Requires:	perl-libnet
-Requires:	perl >= 5.004
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
