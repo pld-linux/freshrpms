@@ -55,10 +55,3 @@ rm -rf $RPM_BUILD_ROOT
 %config /etc/freshrpms.conf
 %attr(755,root,root) /usr/bin/freshrpms
 %{_mandir}/man1/freshrpms.1.gz
-
-%changelog
-* Sat Jun 26 1999 Michal Margula <alchemyx@pld.org.pl>
-  [0.7.3-2]
-- spec hacked for PLD
-- translated spec
-- compressed documentation
