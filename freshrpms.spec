@@ -10,7 +10,7 @@ Source:		ftp://ftp.cs.tu-berlin.de/pub/local/flp/lutzeb/software/freshrpms/fresh
 Requires:	perl-libnet
 Requires:	perl >= 5.004
 Buildarch:	noarch
-BuildRoot:      /tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 freshrpms is a Perl5 script which fetches RPM packages from FTP servers which
