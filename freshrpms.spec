@@ -36,9 +36,9 @@ oraz archiwum. Mo¿e tak¿e przenosiæ stare pakiety do archiwum.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/{usr/bin,usr/share/man/man1,etc}
+install -d $RPM_BUILD_ROOT/{%{_bindir},%{_mandir}/man1,etc}
 
-install freshrpms $RPM_BUILD_ROOT/usr/bin/freshrpms
+install freshrpms $RPM_BUILD_ROOT%{_bindir}/freshrpms
 install freshrpms.conf $RPM_BUILD_ROOT/etc/freshrpms.conf
 
 gzip -9fn {README,freshrpms.1}
@@ -51,7 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README.gz
-
 %config /etc/freshrpms.conf
-%attr(755,root,root) /usr/bin/freshrpms
+%attr(755,root,root) %{_bindir}/freshrpms
 %{_mandir}/man1/freshrpms.1.gz
