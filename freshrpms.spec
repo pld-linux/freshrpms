@@ -40,6 +40,8 @@ archiwum. Mo¿e tak¿e przenosiæ stare pakiety do archiwum.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/{%{_bindir},%{_mandir}/man1,etc}
 
+chmod u+w .
+
 install freshrpms $RPM_BUILD_ROOT%{_bindir}/freshrpms
 install freshrpms.conf $RPM_BUILD_ROOT%{_sysconfdir}/freshrpms.conf
 
