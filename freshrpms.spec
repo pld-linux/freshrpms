@@ -39,7 +39,7 @@ archiwum. Mo¿e tak¿e przenosiæ stare pakiety do archiwum.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/{%{_bindir},%{_mandir}/man1,etc}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_sysconfdir}}
 
 chmod u+w .
 
