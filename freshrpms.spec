@@ -3,9 +3,10 @@ Summary(pl):	¦ci±ga pakiety nowe pakiet RPM z serwerów FTP
 Name:		freshrpms
 Version:	0.7.4
 Release:	5
-Copyright:	distributable
-Group:		Utilities/System
-Group(pl):	Narzêdzia/System
+License:	Distributable
+Group:		Applications/System
+Group(de):	Applikationen/System
+Group(pl):	Aplikacje/System
 Source0:	ftp://ftp.cs.tu-berlin.de/pub/local/flp/lutzeb/software/freshrpms/%{name}.tar.gz
 Requires:	perl-libnet
 Requires:	perl >= 5.004
@@ -45,16 +46,16 @@ chmod u+w .
 install freshrpms $RPM_BUILD_ROOT%{_bindir}/freshrpms
 install freshrpms.conf $RPM_BUILD_ROOT%{_sysconfdir}/freshrpms.conf
 
-gzip -9nf {README,freshrpms.1}
+install freshrpms.1 $RPM_BUILD_ROOT%{_mandir}/man1/
 
-install freshrpms.1.gz $RPM_BUILD_ROOT%{_mandir}/man1/freshrpms.1.gz
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.gz
+%doc *.gz
 %config %{_sysconfdir}/freshrpms.conf
 %attr(755,root,root) %{_bindir}/freshrpms
-%{_mandir}/man1/freshrpms.1.gz
+%{_mandir}/man1/freshrpms.1*
