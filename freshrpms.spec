@@ -43,7 +43,6 @@ chmod u+w .
 
 install freshrpms $RPM_BUILD_ROOT%{_bindir}/freshrpms
 install freshrpms.conf $RPM_BUILD_ROOT%{_sysconfdir}/freshrpms.conf
-
 install freshrpms.1 $RPM_BUILD_ROOT%{_mandir}/man1/
 
 %clean
@@ -52,6 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%config %{_sysconfdir}/freshrpms.conf
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/freshrpms.conf
 %attr(755,root,root) %{_bindir}/freshrpms
 %{_mandir}/man1/freshrpms.1*
