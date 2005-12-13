@@ -6,7 +6,7 @@ Version:	0.7.4
 Release:	7
 License:	distributable
 Group:		Applications/System
-Source0:	ftp://ftp.cs.tu-berlin.de/pub/local/flp/lutzeb/software/freshrpms/%{name}.tar.gz
+Source0:	ftp://ftp.cs.tu-berlin.de/pub/local/flp/lutzeb/software/%{name}/freshrpms.tar.gz
 # Source0-md5:	afce815b87a5e0b758932d94f634525f
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
