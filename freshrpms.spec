@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Fetch RPM packages from FTP servers which are newer than the ones installed on your system
-Summary(pl):	¦ci±ga nowe pakiety RPM z serwerów FTP
+Summary(pl.UTF-8):   ÅšciÄ…ga nowe pakiety RPM z serwerÃ³w FTP
 Name:		freshrpms
 Version:	0.7.4
 Release:	7
@@ -22,15 +22,15 @@ RPMs, local download directories and local archive directories for
 installed RPMs. It can also garbage collect local archived RPMs which
 are older than the currenly installed ones.
 
-%description -l pl
-freshrpms jest skryptem w jêzyku Perl, ¶ci±gaj±cym z serwerów FTP
-pakiety RPM, których numery wersji s± wy¿sze ni¿ tych zainstalowanych
-w Twoim systemie. freshrpms nie instaluje samodzielnie ¿adnych
-pakietów, ale tylko wykorzystuje zarz±dcê pakietów, aby sprawdziæ
+%description -l pl.UTF-8
+freshrpms jest skryptem w jÄ™zyku Perl, Å›ciÄ…gajÄ…cym z serwerÃ³w FTP
+pakiety RPM, ktÃ³rych numery wersji sÄ… wyÅ¼sze niÅ¼ tych zainstalowanych
+w Twoim systemie. freshrpms nie instaluje samodzielnie Å¼adnych
+pakietÃ³w, ale tylko wykorzystuje zarzÄ…dcÄ™ pakietÃ³w, aby sprawdziÄ‡
 jakie pakiety masz zainstalowane. freshrpms do wykonania swojego
-zadania u¿ywa pliku konfiguracyjnego, który definiuje u¿ywane serwery
-FTP, ¶cie¿ki poszukiwañ, lokalne katalogi na nowe pakiety oraz
-archiwum. Mo¿e tak¿e przenosiæ stare pakiety do archiwum.
+zadania uÅ¼ywa pliku konfiguracyjnego, ktÃ³ry definiuje uÅ¼ywane serwery
+FTP, Å›cieÅ¼ki poszukiwaÅ„, lokalne katalogi na nowe pakiety oraz
+archiwum. MoÅ¼e takÅ¼e przenosiÄ‡ stare pakiety do archiwum.
 
 %prep
 %setup -q
