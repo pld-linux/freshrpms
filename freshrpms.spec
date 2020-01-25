@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	Fetch RPM packages from FTP servers which are newer than the ones installed on your system
 Summary(pl.UTF-8):	Ściąga nowe pakiety RPM z serwerów FTP
 Name:		freshrpms
